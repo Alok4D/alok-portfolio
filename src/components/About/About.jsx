@@ -1,7 +1,6 @@
-
-import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/banner-logo/profile-1.png';
+import ReactTypingEffect from "react-typing-effect";
+import Tilt from "react-parallax-tilt";
+import profileImage from "../../assets/banner-logo/profile-1.png";
 
 const About = () => {
   return (
@@ -25,10 +24,11 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
-                'App Developer',
-                'UI/UX Designer',
-                'Coder',
+                "MERN-Stact Developer",
+                "Web Developer",
+                "ReactJS Developer",
+                "Front-End Developer",
+                "Programmer",
               ]}
               speed={100}
               eraseSpeed={50}
@@ -49,18 +49,19 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/drive/home"
-            target="_blank"
+            // href="https://drive.google.com/drive/home"
+            // target="_blank"
+            href="/src/assets/CV/Alok-Resume-WD_2 (8).pdf"
+            download
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
             }}
           >
             DOWNLOAD CV
           </a>
-          
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
