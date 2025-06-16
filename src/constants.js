@@ -47,12 +47,9 @@ import vpsLogo from "./assets/education_logo/Image 2025-06-13 at 19.33.16_3a56fe
 import githubdetLogo from "./assets/work_logo/Screenshot 2025-06-16 134242.png";
 import csprepLogo from "./assets/work_logo/building-management-system.png";
 import movierecLogo from "./assets/work_logo/movie_rec.png";
-import taskremLogo from "./assets/work_logo/task_rem.png";
-import npmLogo from "./assets/work_logo/npm.png";
-import webverLogo from "./assets/work_logo/web_dig.png";
-import cmLogo from "./assets/work_logo/cm.png";
-import imagesearchLogo from "./assets/work_logo/image_search.png";
 import removebgLogo from "./assets/work_logo/resturant-mangement-web.png";
+import removebgLogotwo from "./assets/work_logo/stay-vista-project.png";
+import bistroBossProject from "./assets/work_logo/Bistro-boss.png";
 
 export const SkillsInfo = [
   {
@@ -220,8 +217,16 @@ export const projects = [
     github: "https://github.com/Alok4D/PH-Assignment-12-public-client-",
     webapp: "https://building-management-auth.web.app/",
   },
- 
-  
+  {
+    id: 2,
+    title: "Movie House App",
+    description:
+      "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
+    image: movierecLogo,
+    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Alok4D/moves-house-app",
+    webapp: "https://movie-house-self.vercel.app/",
+  },
   {
     id: 3,
     title: "Restaurant Management Website",
@@ -232,5 +237,24 @@ export const projects = [
     github: "https://github.com/Alok4D/PH-Assignment-11-Client-public",
     webapp: "https://restaurant-management-website.vercel.app/",
   },
-
+  {
+    id: 4,
+    title: "StayVista",
+    description:
+      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
+    image: removebgLogotwo,
+    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Bistro Boss",
+    description:
+      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
+    image: bistroBossProject,
+    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
+    github: "https://github.com/Alok4D/bistro-boss-client",
+    webapp: "https://bistro-boss-2a23b.web.app/",
+  },
 ];
