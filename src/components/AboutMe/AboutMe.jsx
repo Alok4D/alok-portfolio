@@ -1,10 +1,10 @@
 import profileAboutImg from "../../assets/banner-logo/profile-1.png";
 // import { Download, ExternalLink } from "lucide-react";
 
-const Experience = () => {
+const AboutMe = () => {
   return (
     <section
-      id="experience"
+      id="about"
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2">
       <div className="absolute inset-0"></div>
       <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-background to-transparent"></div>
@@ -46,7 +46,7 @@ const Experience = () => {
                   {/* <code>function passion() { return "Coding" + " 💖"; }</code> */}
                   <code>
                     function passion() &#123; <br />
-                    return "Coding" + " 💖"; <br />
+                    ..return "Coding" + "💖"; <br />
                     &#125;
                   </code>
                 </pre>
@@ -54,7 +54,9 @@ const Experience = () => {
               <div className="absolute -top-4 -right-20 bg-black/70 backdrop-blur-lg p-2 rounded-lg shadow-lg border border-gray-700 transform rotate-6 hover:rotate-0 transition-all duration-300 hidden md:block">
                 <pre className="text-xs text-white">
                   {/* <code>Developer talent={true} </code> */}
-                  <code>Developer talent=&#123;true&#125;</code>
+                  <code>Developer <br />
+                   .talent=&#123;true&#125 <br />
+                   ;</code>
                 </pre>
               </div>
             </div>
@@ -136,4 +138,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default AboutMe;
