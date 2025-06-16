@@ -44,8 +44,8 @@ import bsaLogo from "./assets/education_logo/Rangamati-high-school.png";
 import vpsLogo from "./assets/education_logo/Image 2025-06-13 at 19.33.16_3a56fe64.jpg";
 
 // Project Section Logo's
-import githubdetLogo from "./assets/work_logo/github_det.png";
-import csprepLogo from "./assets/work_logo/cs_prep.png";
+import githubdetLogo from "./assets/work_logo/Screenshot 2025-06-16 134242.png";
+import csprepLogo from "./assets/work_logo/building-management-system.png";
 import movierecLogo from "./assets/work_logo/movie_rec.png";
 import taskremLogo from "./assets/work_logo/task_rem.png";
 import npmLogo from "./assets/work_logo/npm.png";
@@ -115,7 +115,7 @@ export const experiences = [
   {
     id: 0,
     img: webverseLogo,
-    role: "Fullstack Developer",
+    role: "Full stack Developer",
     company: "Webverse Digital",
     date: "April 2024 - Present",
     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
@@ -199,12 +199,12 @@ export const projects = [
     image: githubdetLogo,
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
     github:
-      "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-    webapp: "https://githubprofiledetective.netlify.app/",
+      "https://github.com/Alok4D/search-github-profile",
+    webapp: "https://github-profile-center.vercel.app/",
   },
   {
     id: 1,
-    title: "CS Prep",
+    title: "Building Management System",
     description:
       "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
     image: csprepLogo,
@@ -217,18 +217,18 @@ export const projects = [
       "CSS",
       "JavaScript",
     ],
-    github: "https://github.com/codingmastr/CSPrep",
-    webapp: "https://csprep.netlify.app/",
+    github: "https://github.com/Alok4D/PH-Assignment-12-public-client-",
+    webapp: "https://building-management-auth.web.app/",
   },
   {
     id: 2,
-    title: "Movie Recommendation App",
+    title: "Movie House App",
     description:
       "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
     image: movierecLogo,
     tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/codingmastr/Movie-Recommendation-App",
-    webapp: "https://movie-recommendation-app-jet.vercel.app/",
+    github: "https://github.com/Alok4D/moves-house-app",
+    webapp: "https://movie-house-self.vercel.app/",
   },
   {
     id: 3,
