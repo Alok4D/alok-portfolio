@@ -1,5 +1,5 @@
 import profileAboutImg from "../../assets/banner-logo/profile-1.png";
-// import { Download, ExternalLink } from "lucide-react";
+
 
 const AboutMe = () => {
   return (
@@ -84,8 +84,8 @@ const AboutMe = () => {
             </p>
             <div className="pt-6 flex flex-wrap gap-4">
               <a
-                href="/resume.pdf"
-                download="Md_Rayhan_Frontend_Developer.pdf"
+                href="/src/assets/CV/Alok-Resume-WD_2 (8).pdf"
+                download=""
                 className="inline-flex items-center px-4 py-2 text-sm font-medium text-black bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
               >
                 <svg

@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -12,15 +12,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_axbtt7a",  // Replace with your EmailJS Service ID
-        "template_1ziboq3",  // Replace with your EmailJS Template ID
+        "service_pysy8lr", 
+        "template_u5usn7s", 
         form.current,
-        "Rz7W9pVF0HdDryNNL"  // Replace with your EmailJS Public Key
+        "0JWwJwAkyDFILYJXp"
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset(); 
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
@@ -59,7 +59,8 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          I’d love to hear from you—reach out for any opportunities or questions!
+          I’d love to hear from you—reach out for any opportunities or
+          questions!
         </p>
       </div>
 
@@ -69,7 +70,12 @@ const Contact = () => {
           Connect With Me <span className="ml-1">🚀</span>
         </h3>
 
-        <form ref={form} onSubmit={sendEmail} className="mt-4 flex flex-col space-y-4">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="mt-4 flex flex-col space-y-4"
+        >
+
           <input
             type="email"
             name="user_email"
@@ -77,6 +83,7 @@ const Contact = () => {
             required
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
           />
+
           <input
             type="text"
             name="user_name"
@@ -98,7 +105,7 @@ const Contact = () => {
             required
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
           />
-          
+
           {/* Send Button */}
           <button
             type="submit"
