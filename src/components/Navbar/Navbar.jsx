@@ -1,6 +1,8 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,17 +31,20 @@ const Navbar = () => {
   };
 
   const menuItems = [
-     { id: "home", label: "Home" },
+    { id: "home", label: "Home" },
     { id: "about", label: "About Me" },
     { id: "skills", label: "Skills" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
@@ -69,7 +74,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="hidden md:flex space-x-4">
+        {/* <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/Alok4D"
             target="_blank"
@@ -86,6 +91,15 @@ const Navbar = () => {
           >
             <FaLinkedin size={24} />
           </a>
+        </div> */}
+        <div
+        className="hidden md:flex space-x-4">
+          <h2 to="contact" className="btn flex__center hire__btn">
+            Hire Me
+            <div className="flex__center icon">
+              <FaArrowUpRightFromSquare />
+            </div>
+          </h2>
         </div>
 
         {/* Mobile Menu Icon */}

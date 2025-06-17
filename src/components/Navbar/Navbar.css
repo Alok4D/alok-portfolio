@@ -1,0 +1,41 @@
+.hire__btn{
+    overflow: hidden;
+    position: relative;
+    padding-right: 3.3rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1.6rem -0.6rem #212121;
+}
+.icon{
+    background: #2563eb;
+    color: #ffffff;
+    margin-left: 1rem;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7rem;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.2rem #212121;
+    position: absolute;
+    right: 0.3rem;
+    transition: all 0.4s ease-in-out;
+}
+.hire__btn:hover .icon{
+    width: calc(100% - 0.6rem);
+}
+.btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 43px;
+  border-radius: 51px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  /* background: #212121; */
+  text-align: center;
+  cursor: pointer;
+}
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
