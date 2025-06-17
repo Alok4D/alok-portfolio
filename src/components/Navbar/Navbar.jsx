@@ -94,12 +94,12 @@ const Navbar = () => {
         </div> */}
         <div
         className="hidden md:flex space-x-4">
-          <h2 to="contact" className="btn flex__center hire__btn">
+          <a href="#contact" to="contact" className="btn flex__center hire__btn">
             Hire Me
             <div className="flex__center icon">
               <FaArrowUpRightFromSquare />
             </div>
-          </h2>
+          </a>
         </div>
 
         {/* Mobile Menu Icon */}
