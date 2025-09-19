@@ -72,7 +72,7 @@ const AboutMe = () => {
             </p>
             <p className="text-sm text-gray-400 leading-relaxed">
               I specialize in building responsive, user-focused interfaces with
-              React.js and have growing experience with Next.js. Alongside my
+              React.js Alongside my
               frontend skills, I also have practical knowledge of working with
               MongoDB, Express, and Node.js, which helps me understand how the
               frontend and backend connect.
@@ -84,7 +84,7 @@ const AboutMe = () => {
             </p>
             <div className="pt-6 flex flex-wrap gap-4">
               <a
-                href="/src/assets/CV/Alok-Resume-WD_2 (8).pdf"
+                href="/src/assets/CV/Alok Roy Resume.pdf"
                 download=""
                 className="inline-flex items-center px-4 py-2 text-sm font-medium text-black bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
               >

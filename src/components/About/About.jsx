@@ -51,7 +51,7 @@ const About = () => {
           <a
             // href="https://drive.google.com/drive/home"
             // target="_blank"
-            href="/src/assets/CV/Alok-Resume-WD_2 (8).pdf"
+            href="/src/assets/CV/Alok Roy Resume.pdf"
             download
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
