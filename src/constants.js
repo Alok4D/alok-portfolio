@@ -204,19 +204,21 @@ export const projects = [
       "CSS",
       "JavaScript",
     ],
-    github: "https://github.com/Alok4D/PH-Assignment-12-public-client-",
-    webapp: "https://building-management-auth.web.app/",
+   client: "https://github.com/Alok4D/PH-Assignment-12-public-client-",
+    server: "https://github.com/Alok4D/PH-Assignment-12-server-public",
+    live: "https://building-management-auth.web.app/",
   },
 
   {
     id: 4,
-    title: "StayVista",
+    title: "Stay Vista",
     description:
       "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
     image: removebgLogotwo,
     tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-    github: "",
-    webapp: "",
+   client: "https://github.com/Alok4D/client",
+    server: "https://github.com/Alok4D/server",
+    live: "https://stayvista-live-2025-ce330.web.app/",
   },
   {
     id: 5,
@@ -225,7 +227,8 @@ export const projects = [
       "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
     image: bistroBossProject,
     tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-    github: "https://github.com/Alok4D/bistro-boss-client",
-    webapp: "https://bistro-boss-2a23b.web.app/",
+    client: "https://github.com/Alok4D/bistro-boss-client",
+    server: "https://github.com/Alok4D/bistro-boss-server",
+    live: "https://bistro-boss-2a23b.web.app/",
   },
 ];
