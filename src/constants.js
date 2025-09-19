@@ -88,7 +88,7 @@ export const SkillsInfo = [
       { name: "C++", logo: cppLogo },
       { name: "Java", logo: javaLogo },
       { name: "Python", logo: pythonLogo },
-        { name: "Compass", logo: mcLogo },
+      { name: "Compass", logo: mcLogo },
       // { name: "C-Sharp", logo: csharpLogo },
       { name: "JavaScript", logo: javascriptLogo },
       // { name: "TypeScript", logo: typescriptLogo },
@@ -101,7 +101,7 @@ export const SkillsInfo = [
       { name: "GitHub", logo: githubLogo },
       { name: "VS Code", logo: vscodeLogo },
       { name: "Postman", logo: postmanLogo },
-    
+
       { name: "Vercel", logo: vercelLogo },
       { name: "Netlify", logo: netlifyLogo },
       { name: "Figma", logo: figmaLogo },
@@ -190,17 +190,6 @@ export const education = [
 
 export const projects = [
   {
-    id: 0,
-    title: "GitHub Profile Detective",
-    description:
-      "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    image: githubdetLogo,
-    tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-    github:
-      "https://github.com/Alok4D/search-github-profile",
-    webapp: "https://github-profile-center.vercel.app/",
-  },
-  {
     id: 1,
     title: "Building Management System",
     description:
@@ -218,26 +207,7 @@ export const projects = [
     github: "https://github.com/Alok4D/PH-Assignment-12-public-client-",
     webapp: "https://building-management-auth.web.app/",
   },
-  {
-    id: 2,
-    title: "Movie House App",
-    description:
-      "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-    image: movierecLogo,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Alok4D/moves-house-app",
-    webapp: "https://movie-house-self.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Restaurant Management Website",
-    description:
-      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-    image: removebgLogo,
-    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-    github: "https://github.com/Alok4D/PH-Assignment-11-Client-public",
-    webapp: "https://restaurant-management-website.vercel.app/",
-  },
+
   {
     id: 4,
     title: "StayVista",

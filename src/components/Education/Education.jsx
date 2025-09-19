@@ -1,4 +1,4 @@
-import { education } from "../../constants"; // Import the education data
+import { education } from "../../constants"; 
 
 const Education = () => {
   return (

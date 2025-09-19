@@ -1,67 +1,172 @@
-// src/components/Skills/Skills.jsx
+// import { SkillsInfo } from "../../constants";
+// import Tilt from "react-parallax-tilt";
 
-import { SkillsInfo } from "../../constants";
-import Tilt from "react-parallax-tilt";
+// const Skills = () => (
+//   <section
+//     id="skills"
+//     className="py-24 font-sans bg-skills-gradient clip-path-custom"
+//   >
+//     <div className="container mx-auto px-6 lg:px-20">
+//       {/* Section Title */}
+//       <div className="text-center mb-12">
+//         <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
+//         <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
+//         <p className="text-gray-400 mt-4 text-lg font-semibold max-w-2xl mx-auto">
+//           A collection of my technical skills and expertise honed through
+//           various projects and experiences
+//         </p>
+//       </div>
 
-const Skills = () => (
-  <section
-    id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
-  >
-    {/* Section Title */}
-    <div className="text-center mb-8">
-      <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
-      <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
-      <p className="text-gray-400 mt-4 text-lg font-semibold">
-        A collection of my technical skills and expertise honed through various
-        projects and experiences
-      </p>
-    </div>
+//       {/* Skill Categories */}
+//       <div className="flex flex-wrap justify-between gap-6">
+//         {SkillsInfo.map((category) => (
+//           <div
+//             key={category.title}
+//             className="bg-gray-900 backdrop-blur-md px-6 sm:px-8 py-8 w-full sm:w-[48%] rounded-2xl border border-white 
+//             shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
+//           >
+//             <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-6 text-center">
+//               {category.title}
+//             </h3>
 
-    {/* Skill Categories */}
-    <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
-      {SkillsInfo.map((category) => (
-        <div
-          key={category.title}
-          className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white 
-          shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
-        >
-          <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center">
-            {category.title}
-          </h3>
+//             <Tilt
+//               tiltMaxAngleX={20}
+//               tiltMaxAngleY={20}
+//               perspective={1000}
+//               scale={1.05}
+//               transitionSpeed={1000}
+//               gyroscope={true}
+//             >
+//               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+//                 {category.skills.map((skill) => (
+//                   <div
+//                     key={skill.name}
+//                     className="flex items-center justify-center space-x-2 border-2 border-gray-700 rounded-3xl py-2 px-3 bg-transparent hover:border-[#8245ec] transition"
+//                   >
+//                     <img
+//                       src={skill.logo}
+//                       alt={`${skill.name} logo`}
+//                       className="w-6 h-6 sm:w-8 sm:h-8"
+//                     />
+//                     <span className="text-xs sm:text-sm text-gray-300">
+//                       {skill.name}
+//                     </span>
+//                   </div>
+//                 ))}
+//               </div>
+//             </Tilt>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   </section>
+// );
 
-          {/* Skill Items - 3 per row on larger screens */}
-          <Tilt
-            key={category.title}
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
-              {category.skills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
-                >
-                  <img
-                    src={skill.logo}
-                    alt={`${skill.name} logo`}
-                    className="w-6 h-6 sm:w-8 sm:h-8"
-                  />
-                  <span className="text-xs sm:text-sm text-gray-300">
-                    {skill.name}
-                  </span>
+// export default Skills;
+
+"use client";
+
+import { CodeXml, Cpu, Database } from "lucide-react";
+
+
+const frontendSkills = [
+  { name: "HTML", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" },
+  { name: "CSS", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" },
+  { name: "Tailwind CSS", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" },
+  { name: "Bootstrap", img: "https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" },
+  { name: "JavaScript", img: "https://pnggallery.com/wp-content/uploads/javascript-logo-01.png" },
+  { name: "Next.js", img: "https://marcbruederlin.gallerycdn.vsassets.io/extensions/marcbruederlin/next-icons/0.1.0/1723747598319/Microsoft.VisualStudio.Services.Icons.Default" },
+  { name: "React", img: "https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-1024x911-dnspa9ed.png" },
+];
+
+const backendSkills = [
+  { name: "TypeScript", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
+  { name: "Node.js", img: "https://cdn-icons-png.flaticon.com/256/5968/5968322.png" },
+  { name: "Express.js", img: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
+  { name: "MongoDB", img: "https://static-00.iconduck.com/assets.00/database-mongo-db-icon-980x1024-1q3t2p6x.png" },
+];
+
+const tools = [
+  { name: "Git", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" },
+  { name: "GitHub", img: "https://www.pngmart.com/files/23/Github-Logo-PNG.png" },
+  { name: "Figma", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1365px-Figma-logo.svg.png" },
+  { name: "VS Code", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" },
+  { name: "Postman", img: "https://www.applivery.com/wp-content/uploads/2024/09/Postman.png" },
+  { name: "Firebase", img: "https://seekvectors.com/files/download/ffe6fba930dfc0755e5c21537be68530.png" },
+  { name: "NPM", img: "https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-8sw7kisf.png" },
+  { name: "Vercel", img: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/vercel.png" }
+];
+
+export default function Skills() {
+  return (
+    <section id="skills" className="relative py-16 text-white mt-16 rounded-lg md:mx-0 mx-4">
+      <div className="container mx-auto">
+        {/* Section Heading */}
+        <h2 className="text-4xl font-bold text-center text-[#019fc7] mb-6">My Skills</h2>
+        <p className="text-center md:text-lg text-sm text-gray-300 mb-12 max-w-3xl mx-auto">
+          I specialize in modern web development, creating dynamic and responsive applications. Below are my core skills and technologies I work with.
+        </p>
+
+        {/* Skills Grid */}
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          
+          {/* Frontend Skills */}
+          <div className="md:p-6 p-3 rounded-lg border border-white/30 bg-[#0f1524] hover:shadow-lg shadow-[#60a5f9] transition-all duration-300 ease-in-out hover:border-[#60a5f9]">
+            <div className="flex items-center gap-4">
+              <div className="bg-[#171f2e] p-4 rounded-lg">
+                <CodeXml className="text-[#60a5f9]" size={30} />
+              </div>
+              <h2 className="md:text-[24px] text-lg font-bold">Frontend Development</h2>
+            </div>
+            <div className="grid md:grid-cols-3 grid-cols-2 gap-2 md:gap-4 mt-8">
+              {frontendSkills.map(skill => (
+                <div key={skill.name} className="border border-white/30 flex items-center gap-2 p-2 rounded-full bg-[#171f2e] hover:border-[#60a5f9] hover:scale-105 transition-all duration-300">
+                  <img src={skill.img} alt={skill.name} width={30} height={30} className="w-[25px] h-[25px]" />
+                  <h2 className="text-sm">{skill.name}</h2>
                 </div>
               ))}
             </div>
-          </Tilt>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+          </div>
 
-export default Skills;
+          {/* Backend Skills */}
+          <div className="md:p-6 p-3 rounded-lg border border-white/30 bg-[#0f1524] hover:shadow-lg shadow-[#60a5f9] transition-all duration-300 ease-in-out hover:border-[#60a5f9]">
+            <div className="flex items-center gap-4">
+              <div className="bg-[#171f2e] p-4 rounded-lg">
+                <Database className="text-[#44c675]" size={30} />
+              </div>
+              <h2 className="md:text-[24px] text-lg font-bold">Backend Development</h2>
+            </div>
+            <div className="grid md:grid-cols-3 grid-cols-2 gap-2 md:gap-4 mt-8">
+              {backendSkills.map(skill => (
+                <div key={skill.name} className="border border-white/30 flex items-center gap-2 p-2 rounded-full bg-[#171f2e] hover:border-[#60a5f9] hover:scale-105 transition-all duration-300">
+                  <img src={skill.img} alt={skill.name} width={30} height={30} className="w-[25px] h-[25px]" />
+                  <h2 className="text-sm">{skill.name}</h2>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tools & Technologies */}
+          <div className="md:p-6 p-3 rounded-lg border border-white/30 bg-[#0f1524] hover:shadow-lg shadow-[#60a5f9] transition-all duration-300 ease-in-out hover:border-[#60a5f9]">
+            <div className="flex items-center gap-4">
+              <div className="bg-[#171f2e] p-4 rounded-lg">
+                <Cpu className="text-[#e76dae]" size={30} />
+              </div>
+              <h2 className="md:text-[24px] text-lg font-bold">Tools & Technologies</h2>
+            </div>
+            <div className="grid md:grid-cols-3 grid-cols-2 gap-2 md:gap-4 mt-8">
+              {tools.map(skill => (
+                <div key={skill.name} className="border border-white/30 flex items-center gap-2 p-2 rounded-full bg-[#171f2e] hover:border-[#60a5f9] hover:scale-105 transition-all duration-300">
+                  <img src={skill.img} alt={skill.name} width={30} height={30} className="w-[25px] h-[25px]" />
+                  <h2 className="text-sm">{skill.name}</h2>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
