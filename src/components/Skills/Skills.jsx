@@ -1,68 +1,4 @@
-// import { SkillsInfo } from "../../constants";
-// import Tilt from "react-parallax-tilt";
 
-// const Skills = () => (
-//   <section
-//     id="skills"
-//     className="py-24 font-sans bg-skills-gradient clip-path-custom"
-//   >
-//     <div className="container mx-auto px-6 lg:px-20">
-//       {/* Section Title */}
-//       <div className="text-center mb-12">
-//         <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
-//         <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
-//         <p className="text-gray-400 mt-4 text-lg font-semibold max-w-2xl mx-auto">
-//           A collection of my technical skills and expertise honed through
-//           various projects and experiences
-//         </p>
-//       </div>
-
-//       {/* Skill Categories */}
-//       <div className="flex flex-wrap justify-between gap-6">
-//         {SkillsInfo.map((category) => (
-//           <div
-//             key={category.title}
-//             className="bg-gray-900 backdrop-blur-md px-6 sm:px-8 py-8 w-full sm:w-[48%] rounded-2xl border border-white 
-//             shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
-//           >
-//             <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-6 text-center">
-//               {category.title}
-//             </h3>
-
-//             <Tilt
-//               tiltMaxAngleX={20}
-//               tiltMaxAngleY={20}
-//               perspective={1000}
-//               scale={1.05}
-//               transitionSpeed={1000}
-//               gyroscope={true}
-//             >
-//               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-//                 {category.skills.map((skill) => (
-//                   <div
-//                     key={skill.name}
-//                     className="flex items-center justify-center space-x-2 border-2 border-gray-700 rounded-3xl py-2 px-3 bg-transparent hover:border-[#8245ec] transition"
-//                   >
-//                     <img
-//                       src={skill.logo}
-//                       alt={`${skill.name} logo`}
-//                       className="w-6 h-6 sm:w-8 sm:h-8"
-//                     />
-//                     <span className="text-xs sm:text-sm text-gray-300">
-//                       {skill.name}
-//                     </span>
-//                   </div>
-//                 ))}
-//               </div>
-//             </Tilt>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// export default Skills;
 
 "use client";
 
@@ -75,15 +11,15 @@ const frontendSkills = [
   { name: "Tailwind CSS", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" },
   { name: "Bootstrap", img: "https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" },
   { name: "JavaScript", img: "https://pnggallery.com/wp-content/uploads/javascript-logo-01.png" },
-  { name: "Next.js", img: "https://marcbruederlin.gallerycdn.vsassets.io/extensions/marcbruederlin/next-icons/0.1.0/1723747598319/Microsoft.VisualStudio.Services.Icons.Default" },
-  { name: "React", img: "https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-1024x911-dnspa9ed.png" },
+  { name: "React", img: "https://i.ibb.co.com/FL4Jwyd3/YYo-Q4-Dt0-Vnf3-Meb-CZLt4q-MD0u-Pl-T9gt-Eyo1jut-JMco.webp" },
+  
 ];
 
 const backendSkills = [
-  { name: "TypeScript", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
-  { name: "Node.js", img: "https://cdn-icons-png.flaticon.com/256/5968/5968322.png" },
   { name: "Express.js", img: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" },
-  { name: "MongoDB", img: "https://static-00.iconduck.com/assets.00/database-mongo-db-icon-980x1024-1q3t2p6x.png" },
+  { name: "Node.js", img: "https://cdn-icons-png.flaticon.com/256/5968/5968322.png" },
+  { name: "MongoDB", img: "https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg" },
+  { name: "TypeScript", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
 ];
 
 const tools = [
@@ -93,7 +29,7 @@ const tools = [
   { name: "VS Code", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" },
   { name: "Postman", img: "https://www.applivery.com/wp-content/uploads/2024/09/Postman.png" },
   { name: "Firebase", img: "https://seekvectors.com/files/download/ffe6fba930dfc0755e5c21537be68530.png" },
-  { name: "NPM", img: "https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-8sw7kisf.png" },
+  { name: "NPM", img: "https://images.icon-icons.com/2407/PNG/512/npm_icon_146141.png" },
   { name: "Vercel", img: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/vercel.png" }
 ];
 

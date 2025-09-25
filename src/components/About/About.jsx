@@ -88,7 +88,6 @@
 // export default About;
 
 "use client";
-import { Link } from "react-scroll";
 import { Download } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -100,9 +99,9 @@ import { TypingAnimation } from "../ui/terminal";
 // The code content for the typing animation
 const codeContent = `const profile = {
     <span class="text-[#efbe53]">name</span>: <span class="text-[#a5d6ff]">'Alok Roy'</span>,
-    <span class="text-[#efbe53]">title</span>: <span class="text-[#a5d6ff]">'Full-Stack Developer | MERN Developer | Next.js Developer'</span>,
+    <span class="text-[#efbe53]">title</span>: <span class="text-[#a5d6ff]">'Front-End Developer | MERN Stack Developer | React.js Developer'</span>,
     <span class="text-[#efbe53]">skills</span>: [
-        <span class="text-[#a5d6ff]">'React'</span>, <span class="text-[#a5d6ff]">'Next.js'</span>, <span class="text-[#a5d6ff]">'Redux'</span>, <span class="text-[#a5d6ff]">'Node'</span>, <span class="text-[#a5d6ff]">'Express'</span>,
+        <span class="text-[#a5d6ff]">'ReactJs'</span>, <span class="text-[#a5d6ff]">'Transtack Query'</span>, <span class="text-[#a5d6ff]">'TailwindCSS'</span>, <span class="text-[#a5d6ff]">'Node.js'</span>, <span class="text-[#a5d6ff]">'Express'</span>,
         <span class="text-[#a5d6ff]">'JavaScript'</span>, <span class="text-[#a5d6ff]">'TypeScript'</span>, <span class="text-[#a5d6ff]">'MongoDB'</span>,
         <span class="text-[#a5d6ff]">'Git'</span>, <span class="text-[#a5d6ff]">'GitHub'</span>, <span class="text-[#a5d6ff]">'Postman'</span>
     ],
@@ -151,7 +150,7 @@ const About = () => {
                     <p className="text-[#60a5f9] font-medium md:text-xl my-4 border-[1px] border-[#60a5f9] inline-block px-4 py-2 rounded-full bg-[#041826]">
                         <TypeAnimation
                             sequence={[
-                                "A Passionate Web Developer",
+                                "Front-End Developer",
                                 1000,
                                 "MERN Stack Developer",
                                 1000,
@@ -164,29 +163,17 @@ const About = () => {
                         />
                     </p>
 
-                    <p data-aos="fade-right" className="md:text-xl text-gray-200 leading-relaxed">
-                        I craft dynamic, user-friendly web experiences with the MERN stack and Next.js, blending performance with aesthetics to build modern, seamless applications.
+                    <p data-aos="fade-right" className="md:text-md text-gray-200 leading-relaxed">
+                        I craft dynamic, user-friendly web experiences with the MERN stack and Typescript, blending performance with aesthetics to build modern, seamless applications.
                     </p>
 
                     {/* BUTTONS */}
                     <div className="flex flex-wrap items-center justify-center md:gap-4 gap-2 md:justify-start mt-6">
-                        {/* Hire me button */}
-                        <div className="group relative z-10 p-[2px] rounded-lg cursor-pointer transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-[#60a5f9] to-[#34d29a]">
-                            <Link
-                                to="contact"
-                                className="relative flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-[#091121] text-white text-md font-semibold transition-all duration-300"
-                                spy={true}
-                                smooth={true}
-                                offset={-150}
-                                duration={500}
-                            >
-                                <span className="text-xl">Hire me</span>
-                            </Link>
-                        </div>
+                      
 
                         {/* Download CV button */}
                         <a
-                            href="https://drive.google.com/uc?export=download&id=13-9fSHB_8xJzhpJ0xXx4b-P9w3Ezz7Wl"
+                            href="https://drive.google.com/file/d/1L0y9XwGzUsPdODio6EGVWLVj29_cX5Zq/view?usp=sharing"
                             download
                             className="group relative z-10 p-[2px] rounded-lg cursor-pointer transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-[#60a5f9] to-[#34d29a]"
                         >

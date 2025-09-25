@@ -200,8 +200,8 @@ const AboutMe = () => {
             {/* Buttons */}
             <div className="pt-6 flex flex-wrap gap-4">
               <a
-                href="/src/assets/CV/Alok Roy Resume.pdf"
-                download=""
+                href="https://drive.google.com/file/d/1L0y9XwGzUsPdODio6EGVWLVj29_cX5Zq/view?usp=sharing"
+                download
                 className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-pink-500/50 transition"
               >
                 <svg
